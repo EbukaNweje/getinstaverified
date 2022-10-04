@@ -1,0 +1,69 @@
+
+
+.Aboutmain{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    /* background-color: black; */
+    justify-content: center;
+}
+
+.ccontainer{
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cone{
+    width: 50%;
+    height: 500px;
+    /* display: flex; */
+    /* background-color: rgb(12, 14, 14); */
+    margin-left: 20px;
+}
+
+.two{
+    width: 45%;
+    height: 540px;
+    margin-left: 0px;
+    /* background-color: blueviolet; */
+}
+
+.innertwo{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    /* background-color: black; */
+    margin-top: 17px;
+    /* padding-bottom: 15px; */
+}
+
+.txtone{
+    height: 200px;
+    margin-top: 32px;
+}
+
+.txtone h3{
+    font-size: 30px;
+}
+
+.text{
+     margin-left: 20px;
+}
+
+.txtone p{
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.text h4{
+    font-size: 23px;
+}
+
+.text p{
+    font-size: 24px;
+}
