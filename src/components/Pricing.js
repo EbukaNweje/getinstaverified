@@ -34,7 +34,7 @@ const Pricing = () => {
            <li>For any profile</li>
            <li>Verification submission</li>
            <li>Case study for Instagram</li>
-           <li>Fast turnaround time (3 to 8 business days)</li>
+           <li>Fast turnaround time (3 to 6 hours)</li>
            <li className='buttonPrice'>
                <span>Get Started</span>
            </li>
@@ -44,12 +44,12 @@ const Pricing = () => {
         <li className='Card_name'>Premium</li>
            <li className='Card_amount'>
                <p>$</p>
-               <span>189</span></li>
+               <span>300</span></li>
            <li>For any profile</li>
            <li>Interview Article</li>
            <li>2 Press Publications</li>
            <li>Case study for Instagram</li>
-           <li>Fast turnaround time (3 to 8 business days)</li>
+           <li>Fast turnaround time (6 to 24 hours)</li>
            <li className='buttonPrice'>
                <span>Get Started</span>
            </li>
