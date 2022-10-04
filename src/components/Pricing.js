@@ -44,7 +44,7 @@ const Pricing = () => {
         <li className='Card_name'>Premium</li>
            <li className='Card_amount'>
                <p>$</p>
-               <span>300</span></li>
+               <span>200</span></li>
            <li>For any profile</li>
            <li>Interview Article</li>
            <li>2 Press Publications</li>
