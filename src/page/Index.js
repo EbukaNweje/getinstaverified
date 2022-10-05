@@ -6,6 +6,7 @@ import Home from '../components/Home.js'
 import HowItWork from '../components/HowItWork'
 import Pricing from '../components/Pricing'
 import About from '../components/About'
+import Faq from '../components/Faq'
 const Index = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const Index = () => {
         <HowItWork/>
         <Pricing/>
         <About/>
+        <Faq/>
 
     </div>
   )

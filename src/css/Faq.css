@@ -1,0 +1,86 @@
+.Faq_container {
+    width: 100%;
+    display: flex;
+    padding: 10% 0;
+    justify-content: center;
+    margin-top: 10%;
+    align-items: center;
+    background-color: rgb(246, 244, 249);
+    height: max-content;
+}
+
+.Question_holder {
+    width: 70%;
+    height: max-content;
+    padding: 10px;
+}
+
+@keyframes myAnim {
+    0% {
+        transform: translateY(-20%);
+        opacity: 0.75;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+.Faq_questions {
+    width: 100%;
+    /* height: 40px; */
+    padding-bottom: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+
+.Faq_questions section {
+    display: flex;
+    height: 40px;
+    
+    justify-content: space-between;
+}
+
+.Faq_questions section p {
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.Faq_questions section p:hover {
+    color: navy;
+}
+
+.Faq_questions section h3 {
+    color: navy;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.Faq_questions article {
+    /* text-align: center; */
+    width: 90%;
+    animation-name: myAnim;
+    animation-duration: 1s;
+    padding-top: 15px;
+    font-size: 19px;
+    transition: all 350ms;
+    padding-left: 5%;
+}
+
+
+@media (max-width: 900px) {
+    .Faq_questions section p {
+        font-size: 16px;
+    }
+
+    .Faq_questions article {
+        font-size: 16px;
+    }
+}

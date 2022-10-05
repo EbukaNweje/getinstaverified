@@ -41,7 +41,7 @@ const About = () => {
     <div><img src={Logo3} alt=""/></div>
     <div class="text">
     <h4>Fast Turnaround Time</h4>
-    <p>We’ll have everything sorted and ready within 3 to 8 business days.</p>
+    <p>We’ll have everything sorted and ready within 2 to 3 business days.</p>
 </div>
 </div>
         </div>
