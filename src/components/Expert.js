@@ -1,0 +1,47 @@
+import React from 'react'
+import '../css/Expert.css'
+import Logo from '../asset/workk.PNG'
+
+const Expert = () => {
+  return (
+    <div className='Expert_container'>
+        <div className="left_Div">
+            <h1>Let's Make Things Happen</h1>
+            <h2>
+                Please fill out the form and we’ll
+                 email you with all the details
+                 alongside answer any questions you may have.
+            </h2>
+
+            <h4>
+            “I had around 15,000 followers a couple of
+             years ago and I found ‘Get Insta Verified’. 
+             I spoke to Richard and he helped me through the
+              process to having my account verified. ”
+            </h4>
+            <h4>Mark Segbers</h4>
+            <p>@x_marks_thaspot</p>
+        </div>
+        <div className="right_Div">
+            <div className="Img_div">
+                <img src={Logo} alt="" />
+            </div>
+            <h2>Larry Rohan</h2>
+            <h4>Phone:+1 (754) 250‑3645</h4>
+            <p>Social Media Expert</p>
+            <div className="email_div">
+                <icon></icon>
+                <h4> hello@instagambadgeapprovedfrom.com </h4>
+                    
+            </div>
+            <ul className='mylist'>
+                <l1>24/7 Customer Support</l1>
+                <l1>Highest Success Rate</l1>
+                <l1>Let us verify your page like we have with over 500+ clients</l1>
+            </ul>
+        </div>
+    </div>
+  )
+}
+
+export default Expert

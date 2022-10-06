@@ -1,0 +1,178 @@
+.blogall{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainblog{
+    width: 95%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 10px;
+} 
+
+
+.blogall h3{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.containers{
+    width: 400px;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+.image{
+    height: 35vh;
+    background-image: url(../asset/image/img1.webp);
+    background-repeat: no-repeat;
+}
+
+.imagetwo2{
+    height: 35vh;
+    background-image: url(../asset/image/img2.webp);
+    background-repeat: no-repeat;
+    /* background: #000; */
+}
+
+.imagethree3{
+    height: 35vh;
+    background-image: url(../asset/image/img3.webp);
+    background-repeat: no-repeat;
+}
+
+.age{
+    height: 35vh;
+}
+
+.age:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.205), rgba(0, 0, 128, 0.548));
+    height: 35vh;
+    cursor: pointer;
+}
+
+ .image img {
+    width: 400px;
+    height: 35vh;
+    /* background-color: navy; */
+} 
+
+img:hover{
+    cursor: pointer;
+    /* background-color: navy; */
+    /* height: 35vh; */
+}
+
+.containers h3{
+    width: 375px;
+    line-height: 35px;
+} 
+
+.containers h3:hover{
+    color: navy;
+    cursor: pointer;
+}
+
+.containers p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+.containers p:hover{
+     color:  navy
+
+}
+
+.line{
+    width: 400px;
+    height: 30px;
+    border-bottom: 1px rgba(128, 128, 128, 0.189) dashed;
+}
+
+.more{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000;
+}
+
+
+
+
+.container a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media(max-width : 900px){
+    .blogall{
+        width: 85%;
+        height: max-content;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mainblog{
+        width: 100%;
+        height: max-content;
+        margin-left: 20%;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    } 
+    .containers{
+        width: 100%;
+        height: 78vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+     .image img {
+        width: 100%;
+        height: 15vh;
+    } 
+    
+    
+    
+    .containers h3{
+        width: 90%;
+        line-height: 35px;
+    } 
+    
+    .containers h3:hover{
+        color: navy;
+        cursor: pointer;
+    }
+
+    .containers p{
+        margin-top: 10px;
+        font-size: 14px;
+        color: #000;
+    }
+    
+    .containers p:hover{
+        color: navy;    
+    }
+    
+    .line{
+        width: 400px;
+        height: 30px;
+        border-bottom: 1px rgba(128, 128, 128, 0.189) dashed;
+    }
+    
+    .more{
+        margin-top: 20px;
+        font-size: 16px;
+        color: #000;
+        margin-bottom: 50px;
+
+    }
+    
+    .container a{
+        text-decoration: none;
+        color: #000;
+    }
+}

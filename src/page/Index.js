@@ -7,6 +7,8 @@ import HowItWork from '../components/HowItWork'
 import Pricing from '../components/Pricing'
 import About from '../components/About'
 import Faq from '../components/Faq'
+import Blog from '../components/Blog'
+import Expert from '../components/Expert'
 const Index = () => {
   return (
     <div>
@@ -16,6 +18,8 @@ const Index = () => {
         <Pricing/>
         <About/>
         <Faq/>
+        <Blog/>
+        <Expert/>
 
     </div>
   )
