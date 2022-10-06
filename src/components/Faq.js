@@ -25,7 +25,7 @@ const Faq = () => {
               {
                    nine? (
                     <article>
-                      Since the final decision is in the hands of Instagram, we can not guarantee verification. For the submission-only (standard) package, we do not offer refunds; for the Platinum Verification package we offer a refund of the submission fee (79$), but this will take away your free re-submission and press optimisation consult.
+                      Since the final decision is in the hands of Instagram, we can not guarantee verification. For the submission-only (standard) package, yes we do offer refunds; for the Platinum Verification package we offer a refund of the submission fee (200$), but this will take away your free re-submission and press optimisation consult.
                    </article>
                    ) : null
               }
@@ -121,7 +121,7 @@ const Faq = () => {
               {
                    sixth? (
                     <article>
-                      We currently accept Mastercard and Visa cards. We’re working on accepting Amex in the near future as well.
+                     We currently accept via zelle cash app or crypto currency we’re working on accepting paypal via family and friends for fast processing as well.
                    </article>
                    ) : null
               }

@@ -16,86 +16,86 @@
 } 
 
 
-.blogall h3{
+.blogallblogall h3{
     font-size: 30px;
     margin-top: 30px;
 }
 
-.containers{
+.containersblogall{
     width: 400px;
     height: 75vh;
     display: flex;
     flex-direction: column;
 }
-.image{
+.imageblogall{
     height: 35vh;
     background-image: url(../asset/image/img1.webp);
     background-repeat: no-repeat;
 }
 
-.imagetwo2{
+.imagetwo2blogall{
     height: 35vh;
     background-image: url(../asset/image/img2.webp);
     background-repeat: no-repeat;
     /* background: #000; */
 }
 
-.imagethree3{
+.imagethree3blogall{
     height: 35vh;
     background-image: url(../asset/image/img3.webp);
     background-repeat: no-repeat;
 }
 
-.age{
+.ageblogall{
     height: 35vh;
 }
 
-.age:hover{
+.ageblogall:hover{
     background: linear-gradient(rgba(255, 255, 255, 0.205), rgba(0, 0, 128, 0.548));
     height: 35vh;
     cursor: pointer;
 }
 
- .image img {
+ .imageblogall img {
     width: 400px;
     height: 35vh;
     /* background-color: navy; */
 } 
 
-img:hover{
+imgblogall:hover{
     cursor: pointer;
     /* background-color: navy; */
     /* height: 35vh; */
 }
 
-.containers h3{
+.containersblogall h3{
     width: 375px;
     line-height: 35px;
 } 
 
-.containers h3:hover{
+.containersblogall h3:hover{
     color: navy;
     cursor: pointer;
 }
 
-.containers p{
+.containersblogall p{
     margin-top: 10px;
     font-size: 14px;
     color: #000;
     cursor: pointer;
 }
-.containers p:hover{
+.containersblogall p:hover{
      color:  navy
 
 }
 
-.line{
+.lineblogall{
     width: 400px;
     height: 30px;
     border-bottom: 1px rgba(128, 128, 128, 0.189) dashed;
 }
 
-.more{
+.moreblogall{
     margin-top: 20px;
     font-size: 14px;
     color: #000;
@@ -104,7 +104,7 @@ img:hover{
 
 
 
-.container a{
+.containerblogall a{
     text-decoration: none;
     color: #000;
 }
@@ -123,47 +123,47 @@ img:hover{
         flex-wrap: wrap;
         margin-top: 30px;
     } 
-    .containers{
+    .containersblogall{
         width: 100%;
         height: 78vh;
         display: flex;
         flex-direction: column;
     }
     
-     .image img {
+     .imageblogall img {
         width: 100%;
         height: 15vh;
     } 
     
     
     
-    .containers h3{
+    .containersblogall h3{
         width: 90%;
         line-height: 35px;
     } 
     
-    .containers h3:hover{
+    .containersblogall h3:hover{
         color: navy;
         cursor: pointer;
     }
 
-    .containers p{
+    .containersblogall p{
         margin-top: 10px;
         font-size: 14px;
         color: #000;
     }
     
-    .containers p:hover{
+    .containersblogall p:hover{
         color: navy;    
     }
     
-    .line{
+    .lineblogall{
         width: 400px;
         height: 30px;
         border-bottom: 1px rgba(128, 128, 128, 0.189) dashed;
     }
     
-    .more{
+    .moreblogall{
         margin-top: 20px;
         font-size: 16px;
         color: #000;
@@ -171,7 +171,7 @@ img:hover{
 
     }
     
-    .container a{
+    .containerblogall a{
         text-decoration: none;
         color: #000;
     }
