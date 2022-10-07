@@ -3,6 +3,7 @@
 .Aboutmain{
     width: 100%;
     height: max-content;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
     display: flex;
     /* background-color: black; */
     justify-content: center;

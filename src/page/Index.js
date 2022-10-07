@@ -9,6 +9,7 @@ import About from '../components/About'
 import Faq from '../components/Faq'
 import Blog from '../components/Blog'
 import Expert from '../components/Expert'
+import Footer from '../components/Footer'
 const Index = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const Index = () => {
         <Faq/>
         <Blog/>
         <Expert/>
+        <Footer/>
 
     </div>
   )

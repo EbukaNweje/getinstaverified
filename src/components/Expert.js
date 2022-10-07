@@ -32,8 +32,7 @@ const Expert = () => {
             <p>Social Media Expert</p>
             <div className="email_div">
                 <icon></icon>
-                <h4> hello@instagambadgeapprovedfrom.com </h4>
-                    
+                <h4> hello@instagambadgeapprovedfrom.com </h4>       
             </div>
             <ul className='mylist'>
                 <li><span className='CoveM'><MdKeyboardArrowRight/></span>24/7 Customer Support</li>

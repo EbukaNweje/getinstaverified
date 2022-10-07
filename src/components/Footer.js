@@ -1,0 +1,75 @@
+import React from 'react'
+import '../css/Footer.css'
+import Logo1 from "../asset/oie_transparent.png"
+import Logostar from '../asset/image copy/stars.png'
+import Logo2 from '../asset/cash app.png'
+import Logo3 from '../asset/zelle.png'
+import Logo4 from '../asset/bitcoin.png'
+
+
+const Footer = () => {
+  return (
+    <div>
+         <div className='main'>
+        <div className='submain'>
+        <div className='header'>
+            <div className='left'>
+                <div className='image'><img src={Logo1} alt='nice pix' className='LogoImg'/></div>
+                <div className='lefttext'>
+                    We help clients get Instagram verified. We have a success rate of 95% and can get you verified on Instagram today.
+                </div>
+            </div>
+            <div className='right'>
+                <ul className='shedolist'>
+                    <li className='same'><h6>Sitemap</h6></li>
+                    {/* <li className='group'> */}
+                    <li className='home'>Home</li>
+                    <li>Blog</li>
+                    <li>Support</li>
+                {/* </li> */}
+                </ul>
+                <ul className='shedolist'>
+                    <li className='same'><h6>Legal</h6></li>
+                    {/* <li className='group'> */}
+                    <li>Terms</li>
+                    <li>Refund</li>
+                    <li>Privacy</li>
+                {/* </li> */}
+                </ul>
+                <ul className='shedolist'>
+                    <li className="same"><h6>Other service</h6></li>
+                    <li className="group">
+                    <li className="lastli">Full service Instagram growth coming soon.</li></li>
+                </ul>
+            </div>
+        </div>
+        <div className="footer">
+            <div className="row1">© 2022Social Grow LLC - Made with ❤️ in California</div>
+            <div className="row2">
+                <div className="rate" ><img src={Logostar} alt="what" className="star"/>4.5/5</div>
+                <div className="pictext"><p className="mail">hello@instagambadgeapprovedfrom.com</p>
+                <div className='Footer_img'>
+                <img src={Logo2} alt='my pix'/>
+                    <img src={Logo3} alt='my pix'/>
+                    <img src={Logo4} alt='my pix'/>  
+                </div>
+                </div>
+
+            </div>
+            <div className="row3">
+                GetInstaVerified is rated <span>“Excellent”</span> by 58 reviewers.
+                <div className="allfoto ">
+                    <img src={Logo2} alt='my pix'/>
+                    <img src={Logo3} alt='my pix'/>
+                    <img src={Logo4} alt='my pix'/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>
+  )
+}
+
+export default Footer
