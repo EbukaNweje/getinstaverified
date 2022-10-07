@@ -10,7 +10,7 @@ import Logo4 from '../asset/bitcoin.png'
 const Footer = () => {
   return (
     <div>
-         <div className='main'>
+         <div className='mainFooter'>
         <div className='submain'>
         <div className='header'>
             <div className='left'>

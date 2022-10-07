@@ -16,7 +16,9 @@ const HowItWork = () => {
         <div class="container">
            
             <div class="con">
-                 <div class="image"><img src={OneImg} alt="OneImg"/></div>
+                 <div class="imageImg">
+                    <img src={OneImg} alt="OneImg"/> 
+                 </div>
                  <div class="txt">
                     <div class="icon">
                           <img src={TwoImg} alt="TwoImg"/>
@@ -54,7 +56,7 @@ const HowItWork = () => {
         <div class="container">
           
             <div class="con">
-            <div class="image"><img src={FiveImg} alt="FiveImg"/></div>
+            <div class="imageImg"><img src={FiveImg} alt="FiveImg"/></div>
             <div class="txt">
                 <div class="icon">
                     <img src={SixImg} alt="SixImg"/>
