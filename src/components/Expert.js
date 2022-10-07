@@ -38,7 +38,7 @@ const Expert = () => {
             <ul className='mylist'>
                 <li><span className='CoveM'><MdKeyboardArrowRight/></span>24/7 Customer Support</li>
                 <li><span className='CoveM'><MdKeyboardArrowRight/></span>Highest Success Rate</li>
-                <li><span className='CoveM'><MdKeyboardArrowRight/></span> Let us verify your page like we have with over 500+ clients</li>
+                <li><span className='CoveM'><MdKeyboardArrowRight/></span> Let us verify your page like we  have <br/> with over 500+ clients</li>
             </ul>
         </div>
     </div>

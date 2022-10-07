@@ -121,7 +121,8 @@ const Faq = () => {
               {
                    sixth? (
                     <article>
-                     We currently accept via zelle cash app or crypto currency we’re working on accepting paypal via family and friends for fast processing as well.
+                     We currently accept via zelle cash app or crypto.
+                     {/* currency we’re working on accepting paypal via family and friends for fast processing as well */}
                    </article>
                    ) : null
               }

@@ -23,11 +23,11 @@ const HowItWork = () => {
                             <h3>Step 1</h3>
                 </div>
                 <h1>Check your eligibility</h1>
-                <p> – A minimum of 1,500 followers.</p>
+                <p> – A minimum of 500 followers.</p>
 
                     <p> – A public account, with a profile picture.</p>
 
-                   <p> – A minimum of 3 posts with a good level of engagement.</p>
+                   <p> – A minimum of 6 posts with a good level of engagement.</p>
                    <div className='ButtonG'>GET STARTED TODAY <AiOutlineArrowDown/></div>
                 
             </div>
