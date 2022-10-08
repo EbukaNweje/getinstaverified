@@ -2,26 +2,21 @@ import React from 'react'
 import Header from '../components/Header'
 import "../css/style.css"
 import "../css/mobile.css"
-import Home from '../components/Home.js'
-import HowItWork from '../components/HowItWork'
-import Pricing from '../components/Pricing'
-import About from '../components/About'
-import Faq from '../components/Faq'
-import Blog from '../components/Blog'
-import Expert from '../components/Expert'
-import Footer from '../components/Footer'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Payment from '../components/Payment'
+import Main from '../components/Main'
+
 const Index = () => {
   return (
     <div>
+        <BrowserRouter>
         <Header/>
-        <Home/>
-        <HowItWork/>
-        <Pricing/>
-        <About/>
-        <Faq/>
-        <Blog/>
-        <Expert/>
-        <Footer/>
+          <Routes>
+            <Route path='/' element={<Main/>}/>
+            <Route path='/Payment' element={<Payment/>} />
+          </Routes>
+        </BrowserRouter>
+
 
     </div>
   )

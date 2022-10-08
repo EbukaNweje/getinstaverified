@@ -8,7 +8,7 @@
     justify-content: center;
 }
 .submain {
-    width: 96%;
+    width: 100%;
     /* background-color: blue; */
 }
 .LogoImg {
@@ -80,6 +80,7 @@ h6 {
 }
 .footer {
     padding-top: 2%;
+    width: 100%;
     margin-top: 10%;
     background-color: rgb(242, 250, 253);
     height: max-content;

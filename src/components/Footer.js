@@ -22,24 +22,19 @@ const Footer = () => {
             <div className='right'>
                 <ul className='shedolist'>
                     <li className='same'><h6>Sitemap</h6></li>
-                    {/* <li className='group'> */}
                     <li className='home'>Home</li>
                     <li>Blog</li>
                     <li>Support</li>
-                {/* </li> */}
                 </ul>
                 <ul className='shedolist'>
                     <li className='same'><h6>Legal</h6></li>
-                    {/* <li className='group'> */}
                     <li>Terms</li>
                     <li>Refund</li>
                     <li>Privacy</li>
-                {/* </li> */}
                 </ul>
                 <ul className='shedolist'>
                     <li className="same"><h6>Other service</h6></li>
-                    <li className="group">
-                    <li className="lastli">Full service Instagram growth coming soon.</li></li>
+                    <li className="lastli">Full service Instagram growth coming soon.</li>
                 </ul>
             </div>
         </div>

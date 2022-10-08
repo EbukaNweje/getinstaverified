@@ -1,27 +1,29 @@
 import React from 'react'
-import OneImg from "../asset/pic1.webp"
-import TwoImg from "../asset/icon1.png"
-import ThreeImg from "../asset/pic2.webp"
-import Fourmg from "../asset/icon2.png"
-import FiveImg from "../asset/pic3.webp"
-import SixImg from "../asset/icon 3.png"
-import "../css/Chi.css"
-import "../css/ChiM.css"
-import {AiOutlineArrowDown} from "react-icons/ai"
+import OneImg from '../asset/pic1.webp'
+import TwoImg from '../asset/icon1.png'
+import ThreeImg from '../asset/pic2.webp'
+import Fourmg from '../asset/icon2.png'
+import FiveImg from '../asset/pic3.webp'
+import SixImg from '../asset/icon 3.png'
+import '../css/Chi.css'
+import '../css/ChiM.css'
+import {AiOutlineArrowDown} from 'react-icons/ai'
+import { useNavigate } from 'react-router-dom'
 
 const HowItWork = () => {
+    const Nav = useNavigate()
   return (
-    <div class="main">
+    <div className='main'>
         
-        <div class="container">
+        <div className='container'>
            
-            <div class="con">
-                 <div class="imageImg">
-                    <img src={OneImg} alt="OneImg"/> 
+            <div className='con'>
+                 <div className='imageImg'>
+                    <img src={OneImg} alt='OneImg'/> 
                  </div>
-                 <div class="txt">
-                    <div class="icon">
-                          <img src={TwoImg} alt="TwoImg"/>
+                 <div className='txt'>
+                    <div className='icon'>
+                          <img src={TwoImg} alt='TwoImg'/>
                             <h3>Step 1</h3>
                 </div>
                 <h1>Check your eligibility</h1>
@@ -30,18 +32,18 @@ const HowItWork = () => {
                     <p> – A public account, with a profile picture.</p>
 
                    <p> – A minimum of 6 posts with a good level of engagement.</p>
-                   <div className='ButtonG'>GET STARTED TODAY <AiOutlineArrowDown/></div>
+                   <div onClick={()=> Nav('/Payment')} className='ButtonG'>GET STARTED TODAY <AiOutlineArrowDown/></div>
                 
             </div>
         </div>
         </div>
-        <div class="container">
+        <div className='container'>
            
-            <div class="cont">
-            <div class="imager"><img src={ThreeImg} alt="ThreeImg"/></div>
-            <div class="text">
-                <div class="iconer">
-                    <img src={Fourmg} alt="Favour"/>
+            <div className='cont'>
+            <div className='imager'><img src={ThreeImg} alt='ThreeImg'/></div>
+            <div className='text'>
+                <div className='iconer'>
+                    <img src={Fourmg} alt='Favour'/>
                     <h3>Step 2</h3>
                 </div>
                 <h1>We will write PR articles about you</h1>
@@ -53,13 +55,13 @@ const HowItWork = () => {
             </div>
         </div>
         </div>
-        <div class="container">
+        <div className='container'>
           
-            <div class="con">
-            <div class="imageImg"><img src={FiveImg} alt="FiveImg"/></div>
-            <div class="txt">
-                <div class="icon">
-                    <img src={SixImg} alt="SixImg"/>
+            <div className='con'>
+            <div className='imageImg'><img src={FiveImg} alt='FiveImg'/></div>
+            <div className='txt'>
+                <div className='icon'>
+                    <img src={SixImg} alt='SixImg'/>
                     <h3>Step 3</h3>
                 </div>
                 <h1>We submit your account</h1>

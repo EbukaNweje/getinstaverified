@@ -31,7 +31,6 @@ const Expert = () => {
             <h4>WhatsApp: +1 (754) 250‑3645</h4>
             <p>Social Media Expert</p>
             <div className="email_div">
-                <icon></icon>
                 <h4> hello@instagambadgeapprovedfrom.com </h4>       
             </div>
             <ul className='mylist'>

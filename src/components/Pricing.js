@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../css/Price.css'
-
 const Pricing = () => {
+    const Nav = useNavigate()
     const [rem, setRem] = useState(true)
   return (
     <div className='main_pricing'>
@@ -36,7 +37,7 @@ const Pricing = () => {
            <li>Case study for Instagram</li>
            <li>Fast turnaround time (3 to 6 hours)</li>
            <li className='buttonPrice'>
-               <span>Get Started</span>
+               <span onClick={()=> Nav('/Payment')}>Get Started</span>
            </li>
            
        </ul>
@@ -51,7 +52,7 @@ const Pricing = () => {
            <li>Case study for Instagram</li>
            <li>Fast turnaround time (6 to 24 hours)</li>
            <li className='buttonPrice'>
-               <span>Get Started</span>
+               <span onClick={()=> Nav('/Payment')}>Get Started</span>
            </li>
         </ul>
        </div>
