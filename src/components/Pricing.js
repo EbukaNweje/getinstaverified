@@ -4,6 +4,30 @@ import '../css/Price.css'
 const Pricing = () => {
     const Nav = useNavigate()
     const [rem, setRem] = useState(true)
+let ArryData = [
+    {
+        id: "1",
+        name: "Standard",
+        price: 200,
+        firstlist: "for any profile",
+        secondlist: "Verification submission",
+        thirdlist: "case study for instagram",
+        fourthlist: "Fast turnaround time (3 to 6 hours)",
+        fifthlist: "" 
+    },
+
+    {
+        id: "2",
+        name: "Premium",
+        price: 300,
+        firstlist: "for any profile",
+        secondlist: "Interview Article",
+        thirdlist: "2 Press Publications",
+        fourthlist: "Case study for Instagram",
+        fifthlist: "Fast turnaround time (6 to 24 hours)"
+    }
+]
+
   return (
     <div className='main_pricing'>
         <h1>Pricing</h1>
@@ -26,7 +50,32 @@ const Pricing = () => {
         }
            
        <div className="card_div">
-       <ul className='first_card'>
+        {
+           ArryData.map((element) => (
+           <ul className='second_card' key={element.id} >
+           <li className='Card_name'>{element.name}</li>
+              <li className='Card_amount'>
+                  <p>$</p>
+                  <span>{element.price}</span></li>
+              <li>{element.firstlist}</li>
+              <li>{element.secondlist}</li>
+              <li>{element.thirdlist}</li>
+              <li>{element.fourthlist}</li>
+              <li>{element.fifthlist}</li>
+              <li className='buttonPrice'>
+                  <span onClick={()=> {
+                    let myData = []
+                    myData.push(element.name, element.price)
+                    // console.log(element)
+                    localStorage.setItem("Array", JSON.stringify(myData))
+                    Nav('/Payment')}}>Get Started</span>
+                  
+              </li>
+           </ul>
+           
+           ))
+        }
+       {/* <ul className='first_card'>
            <li className='Card_name'>Standard</li>
            <li className='Card_amount'>
                <p>$</p>
@@ -40,21 +89,8 @@ const Pricing = () => {
                <span onClick={()=> Nav('/Payment')}>Get Started</span>
            </li>
            
-       </ul>
-        <ul className='second_card'>
-        <li className='Card_name'>Premium</li>
-           <li className='Card_amount'>
-               <p>$</p>
-               <span>300</span></li>
-           <li>For any profile</li>
-           <li>Interview Article</li>
-           <li>2 Press Publications</li>
-           <li>Case study for Instagram</li>
-           <li>Fast turnaround time (6 to 24 hours)</li>
-           <li className='buttonPrice'>
-               <span onClick={()=> Nav('/Payment')}>Get Started</span>
-           </li>
-        </ul>
+       </ul> */}
+       
        </div>
     </div>
   )

@@ -124,6 +124,16 @@ height: 25%;
 .Payment_text {
     width: 60%;
 }
+
+.Linethrough {
+    text-decoration: line-through;
+}
+
+.check {
+    width: 70%;
+    display: flex;
+}
+
 .Payment_form{
     width: 75%;
       box-shadow: 5px 8px 15px 2px rgba(0, 0, 0, 0.134);
@@ -895,13 +905,7 @@ h4 {
         padding-bottom: 20px;
     }
     
-    .check{
-        /* padding-left: 8%; */
-        /* background-color: yellowgreen; */
-        display: flex;
-        /* justify-content: center; */
-        align-items: center;
-    }
+    
     .yes {
         padding-left: 5%;
     }

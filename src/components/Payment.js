@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/Payment.css'
 import Logo from "../asset/oie_transparent.png"
 import Img2 from '../asset/image copy 2/batch.png'
@@ -10,6 +10,14 @@ import Img7 from '../asset/image copy 2/lock.png'
 import Img8 from '../asset/image copy 2/igpic.png'
 
 const Payment = () => {
+    let Data = JSON.parse(localStorage.getItem("Array"))
+console.log(Data)
+
+const [pack, setPack] = useState(false)
+const [growth, setGrowth] = useState(0)
+const [price, setPrice] = useState(Data[1])
+console.log(setPrice('logo'))
+
   return (
     <div>
         <div className='Payment_main'>
@@ -58,19 +66,19 @@ const Payment = () => {
                     <div className='btn'>Have a coupon? Click here to enter your code</div>
                     <div className='verify'>
                         <div className='verifytext'><img src={Img2} alt=''/>
-                        <div className='packagehidden'>Instagram Verification - Standard Package</div>
+                        <div className='packagehidden'>Instagram Verification - {Data[0]} package </div>
                     </div>
-                        <div>$59.00</div>
+                        <div>${Data[1]}.00</div>
                     </div>
 
                 </div>
                 <div className='subtotal'>
                     <div>subtotal</div>
-                    <div>$59.00</div>
+                    <div>${Data[1]}.00</div>
                 </div>
                 <div className='total'>
                     <div>total</div>
-                    <div>$59.00</div>
+                    <div>${Data[1]}.00</div>
                 </div>
 
             </div>
@@ -81,9 +89,18 @@ const Payment = () => {
                 </div>
                 <div className='dash'>
                     <div className='subdash'>
-                    <header className='dashheader'><div className='check'><input type='checkbox'/> <div className='yes'> Yes! Add Instagram Growth Plan to my order</div> </div>
+                    <header className='dashheader'>
+                        <div className='check'>
+                        <input type='checkbox' onChange={()=>{
+                            pack?( 
+                                setPack(false)): setPack(true)
+
+                                pack? setGrowth(0) :  setGrowth(59)
+                            
+                        }}/> 
+                    <div className='yes'> Yes! Add Instagram Growth Plan to my order</div> </div>
                         <div className='twototal'>
-                        <div>$249.00</div>
+                        <div className='Linethrough'>$249.00</div>
                         <div>$59.00</div> </div>
                 </header>
                 </div>
@@ -119,20 +136,32 @@ const Payment = () => {
                 <div className='fthidden'>
                     <div className='verifyhidden'>
                         <div className='verifytexthidden'><img src={Img2} alt=''/>
-                        <div className='packagehidden'>Instagram Verification - Standard Package</div>
+                        <div className='packagehidden'>Instagram Verification - {Data[0]}</div>
                     </div>
-                        <div>$59.00</div>
-                    </div>
-                    <div className='subtotalhidden'>
-                        <div>subtotal</div>
-                        <div>$59.00</div>
-                    </div>
-                    <div className='totalhidden'>
-                        <div>total</div>
-                        <div>$59.00</div>
+                        <div>${Data[1]}.00</div>
                     </div>
 
                 </div>
+               {
+                pack? (
+                    <div className='fthidden'>
+                    <div className='verifyhidden'>
+                        <div className='verifytexthidden'><img src={Img3} alt=''/>
+                        <div className='packagehidden'>Growth Plan</div>
+                    </div>
+                        <div>$59.00</div>
+                    </div>
+                </div>
+                ) : null
+               }
+                    <div className='subtotalhidden'>
+                        <div>subtotal</div>
+                        <div>${price+growth}.00</div>
+                    </div>
+                    <div className='totalhidden'>
+                        <div>total</div>
+                        <div>${price+growth}.00</div>
+                    </div>
                 <div className='foot'>
                     <div className='info'>
                         <h2>Payment Information</h2>
