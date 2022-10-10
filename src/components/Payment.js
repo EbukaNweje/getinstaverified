@@ -15,8 +15,8 @@ console.log(Data)
 
 const [pack, setPack] = useState(false)
 const [growth, setGrowth] = useState(0)
-const [price, setPrice] = useState(Data[1])
-console.log(setPrice('logo'))
+const price = Data[1]
+// console.log(setPrice())
 
   return (
     <div>
@@ -92,6 +92,7 @@ console.log(setPrice('logo'))
                     <header className='dashheader'>
                         <div className='check'>
                         <input type='checkbox' onChange={()=>{
+                            
                             pack?( 
                                 setPack(false)): setPack(true)
 
@@ -154,6 +155,7 @@ console.log(setPrice('logo'))
                 </div>
                 ) : null
                }
+                   <div className='fthidden'> 
                     <div className='subtotalhidden'>
                         <div>subtotal</div>
                         <div>${price+growth}.00</div>
@@ -162,6 +164,8 @@ console.log(setPrice('logo'))
                         <div>total</div>
                         <div>${price+growth}.00</div>
                     </div>
+
+                   </div>
                 <div className='foot'>
                     <div className='info'>
                         <h2>Payment Information</h2>
@@ -184,7 +188,7 @@ console.log(setPrice('logo'))
                    
                     <div className='ft3'>
                     <div className='ftcont'> 
-                        <input type='radio'/>  <p className='radiopg'>Bitcoin and other cryptocurrencies (20% off)</p>
+                        <input type='radio'/>  <p className='radiopg'>Bitcoin and other cryptocurrencies (15% off)</p>
                     </div>
                 </div>
                 </div>

@@ -1,10 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Mobile = () => {
+  const Nav = useNavigate()
   return (
     <div className='Mymobile'>
          <ul>
-                <li>Home</li>
+                <li onClick={()=> Nav('/')}>Home</li>
                 <li>How It Works</li>
                 <li>About</li>
                 <li>FAQ</li>
