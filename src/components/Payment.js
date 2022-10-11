@@ -8,6 +8,7 @@ import Img5 from '../asset/image copy 2/verification.png'
 import Img6 from '../asset/image copy 2/shield.png'
 import Img7 from '../asset/image copy 2/lock.png'
 import Img8 from '../asset/image copy 2/igpic.png'
+import Pop from './Pop'
 
 const Payment = () => {
     let Data = JSON.parse(localStorage.getItem("Array"))
@@ -222,6 +223,11 @@ const price = Data[1]
             </div>
             
         </div>
+        
+        <div>
+            <Pop/>
+        </div>
+
         <div className='formfoot'>
             <div className='footpg'>
             <div className='footform'>
