@@ -8,12 +8,12 @@ import SixImg from '../asset/icon 3.png'
 import '../css/Chi.css'
 import '../css/ChiM.css'
 import {AiOutlineArrowDown} from 'react-icons/ai'
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 
 const HowItWork = () => {
-    const Nav = useNavigate()
+    // const Nav = useNavigate()
   return (
-    <div className='main'>
+    <div className='main' id="Works">
         
         <div className='container'>
            
@@ -32,7 +32,7 @@ const HowItWork = () => {
                     <p> – A public account, with a profile picture.</p>
 
                    <p> – A minimum of 6 posts with a good level of engagement.</p>
-                   <div onClick={()=> Nav('/Payment')} className='ButtonG'>GET STARTED TODAY <AiOutlineArrowDown/></div>
+                   <div className='ButtonG'>GET STARTED TODAY <AiOutlineArrowDown/></div>
                 
             </div>
         </div>

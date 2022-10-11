@@ -7,7 +7,7 @@ const Mobile = () => {
     <div className='Mymobile'>
          <ul>
                 <li onClick={()=> Nav('/')}>Home</li>
-                <li>How It Works</li>
+                <li onClick={()=> Nav('#Works')}>How It Works</li>
                 <li>About</li>
                 <li>FAQ</li>
                 <li>Support</li>
