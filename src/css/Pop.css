@@ -26,6 +26,10 @@
     border-radius: 5px;
 }
 
+.cryptocurr {
+    font-weight: bold;
+    color: red;
+}
 .Popcancel {
     position: absolute;
     top: 0;

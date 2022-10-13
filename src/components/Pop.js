@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import "../css/Pop.css"
 
 const Pop = () => {
+  const Nav = useNavigate()
   const [show, setShow] = useState(true)
   return (
     <>
@@ -11,16 +13,19 @@ const Pop = () => {
         <div className='PopCard'>
             <h2>Contact live support</h2>
                 <span>For</span>
-            <p>Zelle or Cash App </p>
-            <p>hello@instagambadgeapprovedfrom.com</p>
+            <p>Zelle or Cash App Payment Info </p>
+            <p className='cryptocurr'>Cryptocurrency Wallet:</p>
+            <p >1McYCydhgBDdjt12o8LSkQVmAoNE3tsYJK</p>
             <button onClick={()=> {
-               setShow(false)
-               window.location.reload()
+              Nav('/')
+              setShow(false)
+              //  window.location.reload()
 
             } } className='PopContactBtn'>Contact</button>
             <span onClick={()=> {
                setShow(false) 
-               window.location.reload()
+              Nav('/')
+              //  window.location.reload()
 
             } } className='Popcancel'>X</span>
         </div>

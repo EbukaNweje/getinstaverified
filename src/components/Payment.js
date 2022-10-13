@@ -81,7 +81,7 @@ const myfunction = ()=> {
                     <div><input type='text' name='' value={msg0} onChange={(e)=> setMsg0(e.target.value)} id='' className='inputcont' placeholder='instagram Username'/></div>
                     <div><input type='email' name='' value={msg3} onChange={(e)=> setMsg3(e.target.value)} id='' className='inputcont' placeholder='Email'/></div>
                     <div><input type='text' name='' value={msg4} onChange={(e)=> setMsg4(e.target.value)} id='' className='inputcont' placeholder='First Name'/></div>
-                    <div><input type='text' name='' value={msg5} onChange={(e)=> setMsg5(e.target.value)} id='' className='inputcont' pgitlaceholder='Second Name'/></div>
+                    <div><input type='text' name='' value={msg5} onChange={(e)=> setMsg5(e.target.value)} id='' className='inputcont' placeholder='Second Name'/></div>
                     <div><input type='text' value={msg6} onChange={(e)=> setMsg6(e.target.value)} className='inputcont' placeholder='Phone (optional)'/></div>
                     <div className='Payment_two'><input type='text'value={msg1} onChange={(e)=> setMsg1(e.target.value)} className='inputcont Inputspace' placeholder='street address'/>
                     <input type='text' name=''value={msg7} onChange={(e)=> setMsg7(e.target.value)} id='' placeholder='Town/city' className='inputcont Inputspace'/></div>
