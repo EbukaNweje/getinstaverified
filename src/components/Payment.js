@@ -15,9 +15,35 @@ const Payment = () => {
 console.log(Data)
 
 const [pack, setPack] = useState(false)
+const [agree, setAgree] = useState(false)
+const [agree1, setAgree1] = useState(false)
+const [msg1, setMsg1] = useState()
+const [msg2, setMsg2] = useState()
+const [msg3, setMsg3] = useState()
+const [msg4, setMsg4] = useState()
+const [msg5, setMsg5] = useState()
+const [msg6, setMsg6] = useState()
+const [msg7, setMsg7] = useState()
+const [msg8, setMsg8] = useState()
+const [msg9, setMsg9] = useState()
+const [msg0, setMsg0] = useState()
+const [show, setShow] = useState()
+const [show1, setShow1] = useState(false)
 const [growth, setGrowth] = useState(0)
 const price = Data[1]
 // console.log(setPrice())
+
+const myfunction = ()=> {
+    if(!msg0 || !msg1 || !msg2 || !msg3 || !msg4 || !msg5 || !msg6 || !msg7 || !msg8 || !msg9) {
+        setShow1(true)
+        setShow(false)
+        // alert("khvid")
+       }
+       else if(agree && agree1) {
+        setShow(true)
+    }
+
+}
 
   return (
     <div>
@@ -49,16 +75,19 @@ const price = Data[1]
                     <div className='formcont'>
                     <h4>CONTACT INFORMATION </h4>
                     <form action='' className='formtag'>
-                    <div><input type='text' name='' id='' className='inputcont' placeholder='instagram Username'/></div>
-                    <div><input type='email' name='' id='' className='inputcont' placeholder='Email'/></div>
-                    <div><input type='text' name='' id='' className='inputcont' placeholder='First Name'/></div>
-                    <div><input type='text' name='' id='' className='inputcont' pgitlaceholder='Second Name'/></div>
-                    <div><input type='text' className='inputcont' placeholder='Phone (optional)'/></div>
-                    <div className='Payment_two'><input type='text' className='inputcont Inputspace' placeholder='street address'/>
-                    <input type='text' name='' id='' placeholder='Town/city' className='inputcont Inputspace'/></div>
-                    <div className='three'><input type='text' className='inputcont Inputspace' placeholder='Postcode'/>
-                    <input type='text' name='' id='' className='inputcont Inputspace' placeholder='country'/>
-                    <input type='text' name='' id='' className='inputcont Inputspace' placeholder='state(optional)'/></div>
+                        {
+                            show1?<div className='Error_prevent'>Please fill the form completely! </div> : null
+                        }
+                    <div><input type='text' name='' value={msg0} onChange={(e)=> setMsg0(e.target.value)} id='' className='inputcont' placeholder='instagram Username'/></div>
+                    <div><input type='email' name='' value={msg3} onChange={(e)=> setMsg3(e.target.value)} id='' className='inputcont' placeholder='Email'/></div>
+                    <div><input type='text' name='' value={msg4} onChange={(e)=> setMsg4(e.target.value)} id='' className='inputcont' placeholder='First Name'/></div>
+                    <div><input type='text' name='' value={msg5} onChange={(e)=> setMsg5(e.target.value)} id='' className='inputcont' pgitlaceholder='Second Name'/></div>
+                    <div><input type='text' value={msg6} onChange={(e)=> setMsg6(e.target.value)} className='inputcont' placeholder='Phone (optional)'/></div>
+                    <div className='Payment_two'><input type='text'value={msg1} onChange={(e)=> setMsg1(e.target.value)} className='inputcont Inputspace' placeholder='street address'/>
+                    <input type='text' name=''value={msg7} onChange={(e)=> setMsg7(e.target.value)} id='' placeholder='Town/city' className='inputcont Inputspace'/></div>
+                    <div className='three'><input type='text' value={msg2} onChange={(e)=> setMsg2(e.target.value)} className='inputcont Inputspace' placeholder='Postcode'/>
+                    <input type='text' name='' value={msg8} onChange={(e)=> setMsg8(e.target.value)} id='' className='inputcont Inputspace' placeholder='country'/>
+                    <input type='text' name='' value={msg9} onChange={(e)=> setMsg9(e.target.value)} id='' className='inputcont Inputspace' placeholder='state(optional)'/></div>
                 </form>
                 <div className='summary'>
                     <div className='summaries'>
@@ -189,7 +218,9 @@ const price = Data[1]
                    
                     <div className='ft3'>
                     <div className='ftcont'> 
-                        <input type='radio'/>  <p className='radiopg'>Bitcoin and other cryptocurrencies (15% off)</p>
+                        <input type='radio' onChange={()=> {
+                         !agree? setAgree(true) : setAgree(false)
+                        } }/>  <p className='radiopg'>Bitcoin and other cryptocurrencies (15% off)</p>
                     </div>
                 </div>
                 </div>
@@ -198,10 +229,13 @@ const price = Data[1]
                         Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.
                     </p>
                     <div className='pg3'>
-                        <input type='checkbox'/>  <p className='agree'>I have read and agree to the website terms and conditions *</p>
+                        <input type='checkbox'onChange={()=> {
+                            !agree1? setAgree1(true) : setAgree1(false)
+                        }} />  <p className='agree'>I have read and agree to the website terms and conditions *</p>
                     </div>
+                    
                     <div className='ft5'>
-                        <button className='place'>Place Your Order Now</button>
+                        <button onClick={()=>myfunction()} className='place'>Place Your Order Now</button>
                         <div className='get'>
                             <div className='get1'><img src={Img5} alt=''/>
                             <div className='very'>#1 Verification Service</div>
@@ -225,8 +259,11 @@ const price = Data[1]
         </div>
         
         <div>
-            <Pop/>
+            {
+                show? <Pop/> : null
+            }
         </div>
+        
 
         <div className='formfoot'>
             <div className='footpg'>

@@ -521,12 +521,19 @@ h4 {
     flex-direction: column;
     align-items: center;
 }
+
+.Error_prevent {
+    color: red;
+    font-weight: bold;
+}
+
 .place{
     width: 50%;
     height: 60px;
     color: white;
     background-color: #1D7E1A;
     border-radius: 40px;
+    cursor: pointer;
     font-size: 18px;
     outline: none;
     border: none;

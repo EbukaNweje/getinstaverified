@@ -7,7 +7,7 @@
     left: 0;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5.3px);
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -20,8 +20,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding: 5px;
     font-size: 20px;
     border-radius: 5px;
+}
+
+.Popcancel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    padding-right: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .PopCard h2,p,span {
