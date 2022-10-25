@@ -42,7 +42,7 @@ const Footer = () => {
             <div className="row1">© 2022Social Grow LLC - Made with ❤️ in California</div>
             <div className="row2">
                 <div className="rate" ><img src={Logostar} alt="what" className="star"/>4.5/5</div>
-                <div className="pictext"><p className="mail">hello@instagambadgeapprovedfrom.com</p>
+                <div className="pictextIn"><p className="mail">info@getverifiedme.org</p>
                 <div className='Footer_img'>
                 <img src={Logo2} alt='my pix'/>
                     <img src={Logo3} alt='my pix'/>
