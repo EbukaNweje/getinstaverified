@@ -30,6 +30,8 @@ const [msg0, setMsg0] = useState()
 const [show, setShow] = useState()
 const [show1, setShow1] = useState(false)
 const [growth, setGrowth] = useState(0)
+// const [collect, setCollect] = useState({})
+
 const price = Data[1]
 // console.log(setPrice())
 
@@ -40,7 +42,20 @@ const myfunction = ()=> {
         // alert("khvid")
        }
        else if(agree && agree1) {
+        let collect = {
+            instagramUsername: msg0,
+            firstName: msg4,
+            secondName: msg5,
+            email: msg3,
+            phone: msg6,
+            streetAddress: msg1,
+            town: msg7,
+            postcode: msg2,
+            country: msg8,
+            state: msg9
+        }
         setShow(true)
+        console.log(collect)
     }
 
 }
@@ -82,12 +97,12 @@ const myfunction = ()=> {
                     <div><input type='email' name='' value={msg3} onChange={(e)=> setMsg3(e.target.value)} id='' className='inputcont' placeholder='Email'/></div>
                     <div><input type='text' name='' value={msg4} onChange={(e)=> setMsg4(e.target.value)} id='' className='inputcont' placeholder='First Name'/></div>
                     <div><input type='text' name='' value={msg5} onChange={(e)=> setMsg5(e.target.value)} id='' className='inputcont' placeholder='Second Name'/></div>
-                    <div><input type='text' value={msg6} onChange={(e)=> setMsg6(e.target.value)} className='inputcont' placeholder='Phone (optional)'/></div>
+                    <div><input type='text' value={msg6} onChange={(e)=> setMsg6(e.target.value)} className='inputcont' placeholder='Phone '/></div>
                     <div className='Payment_two'><input type='text'value={msg1} onChange={(e)=> setMsg1(e.target.value)} className='inputcont Inputspace' placeholder='street address'/>
                     <input type='text' name=''value={msg7} onChange={(e)=> setMsg7(e.target.value)} id='' placeholder='Town/city' className='inputcont Inputspace'/></div>
                     <div className='three'><input type='text' value={msg2} onChange={(e)=> setMsg2(e.target.value)} className='inputcont Inputspace' placeholder='Postcode'/>
                     <input type='text' name='' value={msg8} onChange={(e)=> setMsg8(e.target.value)} id='' className='inputcont Inputspace' placeholder='country'/>
-                    <input type='text' name='' value={msg9} onChange={(e)=> setMsg9(e.target.value)} id='' className='inputcont Inputspace' placeholder='state(optional)'/></div>
+                    <input type='text' name='' value={msg9} onChange={(e)=> setMsg9(e.target.value)} id='' className='inputcont Inputspace' placeholder='state'/></div>
                 </form>
                 <div className='summary'>
                     <div className='summaries'>
